@@ -1,4 +1,4 @@
+streamlit
 tmdbv3api
 requests
-streamlit
 streamlit.components.v1
