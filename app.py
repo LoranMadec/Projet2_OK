@@ -147,16 +147,15 @@ def get_recommendations_globale(id_film):
     except Exception as e:
         st.error("Euhhh JB j'ai une question6")
         return []
-    
+
 ###
 ### Chargement de la page
 ###
 
-#st.set_page_config(page_title="InfoCiné", page_icon=":clap_de_tournage:", layout="centered")
-# Titre centré
-#st.markdown("<h1 style='text-align: center;'>InfoCiné</h1>", unsafe_allow_html=True)
-
 st.set_page_config(layout="wide")
+
+# Haut de la page
+st.markdown('<a id="top"></a>', unsafe_allow_html=True)  # Marqueur pour retourner en haut de la page
 
 tab1, tab2 = st.tabs(["|   Recommandations de film   |", "|   KPIs sur la Creuse et le cinéma   |"])
 
@@ -217,25 +216,26 @@ with tab1:
                     recommendations = list(set(recommendations))  # Supprimer les doublons
                     recommendations = recommendations[:5]  # Limiter à 5 films
                     # Afficher les recommandations
+                    # Afficher les recommandations sous forme d'affiches avec titres seulement
                     if recommendations:
-                        st.title("**Films recommandés :**")
-                        for reco_id in recommendations:
+                        st.write("**Films recommandés :**")
+                        col1, col2, col3, col4, col5 = st.columns(5)  # Créer 5 colonnes pour les affiches
+                        columns = [col1, col2, col3, col4, col5]
+                        for i, reco_id in enumerate(recommendations):
                             reco_film = Movie()
                             reco_film_info = reco_film.details(reco_id)
                             if reco_film_info:
-                                col1, col2 = st.columns([1, 2])  # Définir les colonnes (1 pour l'image, 2 pour les infos)
-                                with col1:
+                                with columns[i]:  # Affichage dans les colonnes créées
                                     if reco_film_info.poster_path:
-                                        st.image(f"https://image.tmdb.org/t/p/w500{reco_film_info.poster_path}", use_column_width=True)  # Affiche la même taille que la colonne de texte
-                                with col2:
-                                    st.write(f"**Titre :** {reco_film_info.title}")
-                                    st.write(f"**Synopsis :** {reco_film_info.overview}")  # Affichage du synopsis des films recommandés
-                                    st.write(f"**Genres :** {', '.join([genre['name'] for genre in reco_film_info.genres])}")  # Affichage des genres
-                                    st.write(f"**Durée :** {reco_film_info.runtime} min")  # Affichage de la durée
-                                # Ajouter un bouton sous chaque affiche
-                                if st.button(f"Ajouter {reco_film_info.title} à la recherche", key=reco_film_info.id):
-                                    st.session_state.search_input = reco_film_info.title  # Remplacer le titre actuel par celui de la reco
-                                    st.rerun()  # Recharger la page pour afficher le film sélectionné dans la barre de recherche
+                                        st.image(f"https://image.tmdb.org/t/p/w500{reco_film_info.poster_path}", use_container_width=True)  # Affiche la même taille que la colonne de texte
+                                    st.write(f"**{reco_film_info.title}**")  # Affichage du titre des films recommandés
+                                    # Ajouter un bouton sous chaque affiche
+                                    if st.button(f"Plus de détails...", key=reco_film_info.id):
+                                            st.session_state.search_input = reco_film_info.title  # Remplacer le titre actuel par celui de la reco
+                                            st.rerun()  # Recharger la page pour afficher le film sélectionné dans la barre de recherche
+ 
+            # Retourner en haut de la page
+            st.markdown('<a href="#top">Retour en haut de la page</a>', unsafe_allow_html=True)
 
 with tab2:
     st.subheader("Visualisez votre tableau de bord à partir des données :")
