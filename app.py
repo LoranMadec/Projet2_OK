@@ -93,26 +93,26 @@ def charger_json(chemin):
     
 # Chemins des fichiers JSON pour chaque genre
 chemins_json = {
-    'Action': ".\Films_Genre_Action.json",
-    'Adventure': ".\Films_Genre_Adventure.json",
-    'War': ".\Films_Genre_War.json",
-    'Western': ".\Films_Genre_Western.json",
-    'Thriller': ".\Films_Genre_Thriller.json",
-    'Sci-Fi': ".\Films_Genre_Sci-Fi.json",
-    'Romance': ".\Films_Genre_Romance.json",
-    'Mystery': ".\Films_Genre_Mystery.json",
-    'Music': ".\Films_Genre_Music.json",
-    'Horror': ".\Films_Genre_Horror.json",
-    'History': ".\Films_Genre_History.json",
-    'Film-Noir': ".\Films_Genre_Film-Noir.json",
-    'Fantasy': ".\Films_Genre_Fantasy.json",
-    'Family': ".\Films_Genre_Family.json",
-    'Drama': ".\Films_Genre_Drama.json",
-    'Crime': ".\Films_Genre_Crime.json",
-    'Comedy': ".\Films_Genre_Comedy.json",
-    'Biography': ".\Films_Genre_Biography.json",
-    'Animation': ".\Films_Genre_Animation.json",
-    'ALL': ".\Films_ALL.json"  # Ajout du fichier Films_ALL.json
+    'Action': "./Films_Genre_Action.json",
+    'Adventure': "./Films_Genre_Adventure.json",
+    'War': "./Films_Genre_War.json",
+    'Western': "./Films_Genre_Western.json",
+    'Thriller': "./Films_Genre_Thriller.json",
+    'Sci-Fi': "./Films_Genre_Sci-Fi.json",
+    'Romance': "./Films_Genre_Romance.json",
+    'Mystery': "./Films_Genre_Mystery.json",
+    'Music': "./Films_Genre_Music.json",
+    'Horror': "./Films_Genre_Horror.json",
+    'History': "./Films_Genre_History.json",
+    'Film-Noir': "./Films_Genre_Film-Noir.json",
+    'Fantasy': "./Films_Genre_Fantasy.json",
+    'Family': "./Films_Genre_Family.json",
+    'Drama': "./Films_Genre_Drama.json",
+    'Crime': "./Films_Genre_Crime.json",
+    'Comedy': "./Films_Genre_Comedy.json",
+    'Biography': "./Films_Genre_Biography.json",
+    'Animation': "./Films_Genre_Animation.json",
+    'ALL': "./Films_ALL.json"  # Ajout du fichier Films_ALL.json
 }
 
 # Fonction pour obtenir les recommandations d'un film en fonction de son genre
