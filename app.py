@@ -88,7 +88,7 @@ def charger_json(chemin):
         with open(chemin, 'r', encoding='utf-8') as f:
             return json.load(f)
     except Exception as e:
-        st.error("Euhhh JB j'ai une question4")
+        st.error("Euhhh JB j'ai une question4 : ",e.errors())
         return []
     
 # Chemins des fichiers JSON pour chaque genre
