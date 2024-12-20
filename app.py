@@ -88,7 +88,7 @@ def charger_json(chemin):
         with open(chemin, 'r', encoding='utf-8') as f:
             return json.load(f)
     except Exception as e:
-        st.error("Euhhh JB j'ai une question4 : ",e.errors())
+        st.error("Erreur JSON : ",e.errors())
         return []
     
 # Chemins des fichiers JSON pour chaque genre
@@ -129,7 +129,7 @@ def get_recommendations_par_genre(genre, id_film):
                             recommendations.append(reco_id)
         return recommendations
     except Exception as e:
-        st.error("Euhhh JB j'ai une question5")
+        st.error("Erreur reco_genre : ",e.errors())
         return []
     
 # Fonction pour obtenir des recommandations globales depuis Films_ALL.json
@@ -145,7 +145,7 @@ def get_recommendations_globale(id_film):
                         recommendations.append(reco_id)
         return recommendations
     except Exception as e:
-        st.error("Euhhh JB j'ai une question6")
+        st.error("Erreur reco_globale : ",e.errors())
         return []
 
 ###
