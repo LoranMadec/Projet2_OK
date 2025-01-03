@@ -3,6 +3,7 @@ import requests
 import json
 from tmdbv3api import TMDb, Movie
 import streamlit.components.v1 as components
+from streamlit.components.v1 import html
 
 ###
 ### Création des fonctions
@@ -160,7 +161,7 @@ st.set_page_config(page_title='First app', page_icon="📊", initial_sidebar_sta
 from streamlit.components.v1 import html
 
 with st.container():
-    st.text("This is paragraph :)") 
+#    st.text("This is paragraph :)") 
     html("""
     <script>
         // Locate elements
