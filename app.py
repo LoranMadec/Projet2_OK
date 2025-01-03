@@ -173,7 +173,7 @@ with tab1:
         return f"{heures}h {reste_minutes}min"
    
     # Interface Streamlit
-    st.subheader("Quel film recherchez vous ?")
+    st.title("Trouvons ensemble le  film qui va illuminer votre soirée !")
     # Initialiser la variable `search_input` dans `session_state` si elle n'existe pas
     if 'search_input' not in st.session_state:
         st.session_state.search_input = ''
@@ -219,7 +219,7 @@ with tab1:
                     # Afficher les recommandations
                     # Afficher les recommandations sous forme d'affiches avec titres seulement
                     if recommendations:
-                        st.write("**Films recommandés :**")
+                        st.subheader("**Vous avez apprécié ? Voici des recommandations qui pourraient vous plaire !**")
                         col1, col2, col3, col4, col5 = st.columns(5)  # Créer 5 colonnes pour les affiches
                         columns = [col1, col2, col3, col4, col5]
                         for i, reco_id in enumerate(recommendations):
