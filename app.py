@@ -157,9 +157,6 @@ def get_recommendations_globale(id_film):
 st.set_page_config(layout="wide")
 st.logo("https://baptistedrapeau.wordpress.com/wp-content/uploads/2019/02/logo-cave-c3a0-film-rond-blanc-noir.png", size="large", link=None, icon_image=None)
 
-st.set_page_config(page_title='First app', layout='wide')
-
-
 # Haut de la page
 st.markdown('<a id="top"></a>', unsafe_allow_html=True)  # Marqueur pour retourner en haut de la page
 
