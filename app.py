@@ -242,20 +242,20 @@ with tab2:
     st.subheader("Visualisez votre tableau de bord à partir des données :")
     tab21, tab22, tab23 , tab24 = st.tabs(["|   INSEE   |", "|   CNC   |", "|   Data Gouv   |", "|   IMdB   |"])
     with tab21:
-        # embed streamlit docs in a streamlit app
+        # embed streamlit docs in a streamlit app - INSEE
         components.iframe("https://app.powerbi.com/view?r=eyJrIjoiN2U0MjM3M2MtM2UzMy00YjVkLWFhM2EtY2NkYjM1YTRlN2JiIiwidCI6ImYyODRkYTU4LWMwOTMtNGZiOS1hM2NiLTAyNDNjM2EwMTRhYyJ9", width=1000, height=648)
 
     with tab22:
-        # embed streamlit docs in a streamlit app
+        # embed streamlit docs in a streamlit app - CNC
         components.iframe("https://app.powerbi.com/view?r=eyJrIjoiM2NlYzM2NmQtYzI0OS00NzBjLTg2NTAtNzE0OWI1MTc4MTQyIiwidCI6ImYyODRkYTU4LWMwOTMtNGZiOS1hM2NiLTAyNDNjM2EwMTRhYyJ9", width=1000, height=648)
 
     with tab23:
-        # embed streamlit docs in a streamlit app
+        # embed streamlit docs in a streamlit app - DataGouv
         components.iframe("https://app.powerbi.com/view?r=eyJrIjoiNDg4ZGI1MDMtMWJlNi00YjY5LTljYjktMGZkZjI5NTY4N2QzIiwidCI6ImYyODRkYTU4LWMwOTMtNGZiOS1hM2NiLTAyNDNjM2EwMTRhYyJ9", width=1000, height=648)
 
     with tab24:
-        # embed streamlit docs in a streamlit app
-        components.iframe("https://app.powerbi.com/view?r=eyJrIjoiMzIyNzdjN2ItMjMzNC00NWExLWFhODItMDliMGZkZThhOTVhIiwidCI6ImYyODRkYTU4LWMwOTMtNGZiOS1hM2NiLTAyNDNjM2EwMTRhYyJ9", width=1000, height=648)
+        # embed streamlit docs in a streamlit app - IMDB
+        components.iframe("https://app.powerbi.com/view?r=eyJrIjoiYzc2NTNlZmMtM2NhYS00ZjYyLTllNzMtYTRiNzNjNzAyY2U5IiwidCI6ImYyODRkYTU4LWMwOTMtNGZiOS1hM2NiLTAyNDNjM2EwMTRhYyJ9", width=1000, height=648)
 
 
 css = '''
