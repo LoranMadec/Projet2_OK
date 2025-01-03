@@ -162,7 +162,7 @@ st.logo("https://baptistedrapeau.wordpress.com/wp-content/uploads/2019/02/logo-c
 
 with st.container():
 #    st.text("This is paragraph :)") 
-    html(
+    html('''
     <script>
         // Locate elements
         var decoration = window.parent.document.querySelectorAll('[data-testid="stDecoration"]')[0];
@@ -186,7 +186,7 @@ with st.container():
         //decoration.style.backgroundImage = "none"; // Remove background image
         //decoration.style.backgroundSize = "unset"; // Remove background size
     </script>
-, width=0, height=0)
+''', width=0, height=0)
 
 # Haut de la page
 st.markdown('<a id="top"></a>', unsafe_allow_html=True)  # Marqueur pour retourner en haut de la page
