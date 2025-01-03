@@ -154,7 +154,7 @@ def get_recommendations_globale(id_film):
 ###
 
 st.set_page_config(layout="wide")
-st.logo("https://st3.depositphotos.com/1588812/13325/v/450/depositphotos_133255394-stock-illustration-vector-logo-cinema.jpg", size="large", link=None, icon_image=None)
+st.logo("https://thumbs.dreamstime.com/b/mod%C3%A8le-abstrait-de-vecteur-logo-cin%C3%A9ma-isol%C3%A9e-sur-le-fond-noir-l-illustration-cr%C3%A9ative-symbole-ic%C3%B4ne-du-concept-film-en-bande-206108156.jpg", size="large", link=None, icon_image=None)
 
 # Haut de la page
 st.markdown('<a id="top"></a>', unsafe_allow_html=True)  # Marqueur pour retourner en haut de la page
