@@ -243,15 +243,15 @@ with tab2:
     tab21, tab22, tab23 , tab24 = st.tabs(["|   INSEE   |", "|   CNC   |", "|   Data Gouv   |", "|   IMdB   |"])
     with tab21:
         # embed streamlit docs in a streamlit app - INSEE
-        components.iframe("https://app.powerbi.com/view?r=eyJrIjoiN2U0MjM3M2MtM2UzMy00YjVkLWFhM2EtY2NkYjM1YTRlN2JiIiwidCI6ImYyODRkYTU4LWMwOTMtNGZiOS1hM2NiLTAyNDNjM2EwMTRhYyJ9", width=1000, height=648)
+        components.iframe("https://app.powerbi.com/view?r=eyJrIjoiYjdlNWZiMmEtMmJmMy00ZjNjLWJjYWEtNmRkZDIxYTY5Mjc1IiwidCI6ImYyODRkYTU4LWMwOTMtNGZiOS1hM2NiLTAyNDNjM2EwMTRhYyJ9", width=1000, height=648)
 
     with tab22:
         # embed streamlit docs in a streamlit app - CNC
-        components.iframe("https://app.powerbi.com/view?r=eyJrIjoiM2NlYzM2NmQtYzI0OS00NzBjLTg2NTAtNzE0OWI1MTc4MTQyIiwidCI6ImYyODRkYTU4LWMwOTMtNGZiOS1hM2NiLTAyNDNjM2EwMTRhYyJ9", width=1000, height=648)
+        components.iframe("https://app.powerbi.com/view?r=eyJrIjoiOGIxZDVhNDctMGQzYS00N2I2LWExYzktZTFhYzM1Y2VhM2IzIiwidCI6ImYyODRkYTU4LWMwOTMtNGZiOS1hM2NiLTAyNDNjM2EwMTRhYyJ9", width=1000, height=648)
 
     with tab23:
         # embed streamlit docs in a streamlit app - DataGouv
-        components.iframe("https://app.powerbi.com/view?r=eyJrIjoiNDg4ZGI1MDMtMWJlNi00YjY5LTljYjktMGZkZjI5NTY4N2QzIiwidCI6ImYyODRkYTU4LWMwOTMtNGZiOS1hM2NiLTAyNDNjM2EwMTRhYyJ9", width=1000, height=648)
+        components.iframe("https://app.powerbi.com/view?r=eyJrIjoiYjIwMDdjN2MtY2NlNy00NmNlLWFlZjAtMWIxMTRlMzcxMGVkIiwidCI6ImYyODRkYTU4LWMwOTMtNGZiOS1hM2NiLTAyNDNjM2EwMTRhYyJ9", width=1000, height=648)
 
     with tab24:
         # embed streamlit docs in a streamlit app - IMDB
