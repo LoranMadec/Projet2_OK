@@ -248,7 +248,7 @@ with tab2:
 
     with tab22:
         # embed streamlit docs in a streamlit app - CNC
-        components.iframe("https://app.powerbi.com/view?r=eyJrIjoiOGIxZDVhNDctMGQzYS00N2I2LWExYzktZTFhYzM1Y2VhM2IzIiwidCI6ImYyODRkYTU4LWMwOTMtNGZiOS1hM2NiLTAyNDNjM2EwMTRhYyJ9", width=1024, height=804)
+        components.iframe("https://app.powerbi.com/view?r=eyJrIjoiYzc4MzMxNzUtOWY5Ny00ZmE2LTlkYzMtNGY2YTkzZTdkN2QyIiwidCI6ImYyODRkYTU4LWMwOTMtNGZiOS1hM2NiLTAyNDNjM2EwMTRhYyJ9", width=1024, height=804)
 
     with tab23:
         # embed streamlit docs in a streamlit app - DataGouv
