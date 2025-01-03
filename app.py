@@ -162,8 +162,31 @@ st.logo("https://baptistedrapeau.wordpress.com/wp-content/uploads/2019/02/logo-c
 
 with st.container():
 #    st.text("This is paragraph :)") 
-    html("""<h1 style="color: #ff0000; font-size: 50px; text-align: center;">Bienvenue sur notre application de recommandation de films !</h1>""")
-
+    html("""
+    <script>
+        // Locate elements
+        var decoration = window.parent.document.querySelectorAll('[data-testid="stDecoration"]')[0];
+        var sidebar = window.parent.document.querySelectorAll('[data-testid="stSidebar"]')[0];
+        // Observe sidebar size
+        function outputsize() {
+            decoration.style.left = `${sidebar.offsetWidth}px`;
+        }
+        new ResizeObserver(outputsize).observe(sidebar);
+        // Adjust sizes
+        outputsize();
+        decoration.style.height = "3.0rem";
+        decoration.style.right = "45px";
+        // Adjust text decorations
+        decoration.innerText = "Application de recommandations de films ciblée pour la Creuse"; // Replace with your desired text
+        decoration.style.fontWeight = "bold";
+        decoration.style.display = "flex";
+        decoration.style.justifyContent = "center";
+        decoration.style.alignItems = "center";
+        //decoration.style.fontWeight = "bold";
+        //decoration.style.backgroundImage = "none"; // Remove background image
+        //decoration.style.backgroundSize = "unset"; // Remove background size
+    </script>
+""", width=0, height=0)
 
 # Haut de la page
 st.markdown('<a id="top"></a>', unsafe_allow_html=True)  # Marqueur pour retourner en haut de la page
