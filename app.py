@@ -155,7 +155,37 @@ def get_recommendations_globale(id_film):
 
 st.set_page_config(layout="wide")
 st.logo("https://baptistedrapeau.wordpress.com/wp-content/uploads/2019/02/logo-cave-c3a0-film-rond-blanc-noir.png", size="large", link=None, icon_image=None)
-st.header("Recherche de films et KPIs sur la Creuse et le cinéma")
+
+st.set_page_config(page_title='First app', page_icon="📊", initial_sidebar_state="expanded", layout='wide')
+from streamlit.components.v1 import html
+
+with st.container():
+    st.text("This is paragraph :)") 
+    html("""
+    <script>
+        // Locate elements
+        var decoration = window.parent.document.querySelectorAll('[data-testid="stDecoration"]')[0];
+        var sidebar = window.parent.document.querySelectorAll('[data-testid="stSidebar"]')[0];
+        // Observe sidebar size
+        function outputsize() {
+            decoration.style.left = `${sidebar.offsetWidth}px`;
+        }
+        new ResizeObserver(outputsize).observe(sidebar);
+        // Adjust sizes
+        outputsize();
+        decoration.style.height = "3.0rem";
+        decoration.style.right = "45px";
+        // Adjust text decorations
+        decoration.innerText = "Welcome, Streamlit App!"; // Replace with your desired text
+        decoration.style.fontWeight = "bold";
+        decoration.style.display = "flex";
+        decoration.style.justifyContent = "center";
+        decoration.style.alignItems = "center";
+        //decoration.style.fontWeight = "bold";
+        //decoration.style.backgroundImage = "none"; // Remove background image
+        //decoration.style.backgroundSize = "unset"; // Remove background size
+    </script>
+""", width=0, height=0)
 
 # Haut de la page
 st.markdown('<a id="top"></a>', unsafe_allow_html=True)  # Marqueur pour retourner en haut de la page
