@@ -243,19 +243,18 @@ with tab2:
     tab21, tab22, tab23 , tab24 = st.tabs(["|   INSEE   |", "|   CNC   |", "|   Data Gouv   |", "|   IMdB   |"])
     with tab21:
         # embed streamlit docs in a streamlit app - INSEE
-        components.iframe("https://app.powerbi.com/view?r=eyJrIjoiYjdlNWZiMmEtMmJmMy00ZjNjLWJjYWEtNmRkZDIxYTY5Mjc1IiwidCI6ImYyODRkYTU4LWMwOTMtNGZiOS1hM2NiLTAyNDNjM2EwMTRhYyJ9", width=1000, height=648)
+        components.iframe("https://app.powerbi.com/view?r=eyJrIjoiYjdlNWZiMmEtMmJmMy00ZjNjLWJjYWEtNmRkZDIxYTY5Mjc1IiwidCI6ImYyODRkYTU4LWMwOTMtNGZiOS1hM2NiLTAyNDNjM2EwMTRhYyJ9", width=1024, height=804)
 
     with tab22:
         # embed streamlit docs in a streamlit app - CNC
-        components.iframe("https://app.powerbi.com/view?r=eyJrIjoiOGIxZDVhNDctMGQzYS00N2I2LWExYzktZTFhYzM1Y2VhM2IzIiwidCI6ImYyODRkYTU4LWMwOTMtNGZiOS1hM2NiLTAyNDNjM2EwMTRhYyJ9", width=1000, height=648)
+        components.iframe("https://app.powerbi.com/view?r=eyJrIjoiOGIxZDVhNDctMGQzYS00N2I2LWExYzktZTFhYzM1Y2VhM2IzIiwidCI6ImYyODRkYTU4LWMwOTMtNGZiOS1hM2NiLTAyNDNjM2EwMTRhYyJ9", width=1024, height=804)
 
     with tab23:
         # embed streamlit docs in a streamlit app - DataGouv
-        components.iframe("https://app.powerbi.com/view?r=eyJrIjoiYjIwMDdjN2MtY2NlNy00NmNlLWFlZjAtMWIxMTRlMzcxMGVkIiwidCI6ImYyODRkYTU4LWMwOTMtNGZiOS1hM2NiLTAyNDNjM2EwMTRhYyJ9", width=1000, height=648)
-
+        components.iframe("https://app.powerbi.com/view?r=eyJrIjoiYjIwMDdjN2MtY2NlNy00NmNlLWFlZjAtMWIxMTRlMzcxMGVkIiwidCI6ImYyODRkYTU4LWMwOTMtNGZiOS1hM2NiLTAyNDNjM2EwMTRhYyJ9", width=1024, height=804
     with tab24:
         # embed streamlit docs in a streamlit app - IMDB
-        components.iframe("https://app.powerbi.com/view?r=eyJrIjoiZDMyMmE0OTMtNmFjYS00MDllLWI5NDAtZjA5MmIyMTI3YWJhIiwidCI6ImYyODRkYTU4LWMwOTMtNGZiOS1hM2NiLTAyNDNjM2EwMTRhYyJ9", width=1000, height=648)
+        components.iframe("https://app.powerbi.com/view?r=eyJrIjoiZDMyMmE0OTMtNmFjYS00MDllLWI5NDAtZjA5MmIyMTI3YWJhIiwidCI6ImYyODRkYTU4LWMwOTMtNGZiOS1hM2NiLTAyNDNjM2EwMTRhYyJ9", width=1024, height=804)
 
 
 css = '''
