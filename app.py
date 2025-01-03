@@ -239,7 +239,7 @@ with tab1:
             st.markdown('<a href="#top">Retour en haut de la page</a>', unsafe_allow_html=True)
 
 with tab2:
-    st.subheader("Visualisez votre tableau de bord à partir des données :")
+    st.title("Visualisez votre tableau de bord à partir des données :")
     tab21, tab22, tab23 , tab24 = st.tabs(["|   INSEE   |", "|   CNC   |", "|   Data Gouv   |", "|   IMdB   |"])
     with tab21:
         # embed streamlit docs in a streamlit app - INSEE
