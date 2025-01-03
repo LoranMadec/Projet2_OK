@@ -154,7 +154,7 @@ def get_recommendations_globale(id_film):
 ###
 
 st.set_page_config(layout="wide")
-st.logo("https://i.imgur.com/optdGUH.jpeg", size="large", link=None, icon_image=None)
+st.logo("https://static.vecteezy.com/ti/vecteur-libre/t1/12657549-illustration-bandes-de-rouleau-de-bobine-de-film-negatif-pour-logo-video-de-cinema-vectoriel.jpg", size="large", link=None, icon_image=None)
 
 # Haut de la page
 st.markdown('<a id="top"></a>', unsafe_allow_html=True)  # Marqueur pour retourner en haut de la page
