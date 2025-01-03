@@ -255,7 +255,7 @@ with tab2:
         components.iframe("https://app.powerbi.com/view?r=eyJrIjoiYjIwMDdjN2MtY2NlNy00NmNlLWFlZjAtMWIxMTRlMzcxMGVkIiwidCI6ImYyODRkYTU4LWMwOTMtNGZiOS1hM2NiLTAyNDNjM2EwMTRhYyJ9", width=1024, height=804)
     with tab24:
         # embed streamlit docs in a streamlit app - IMDB
-        components.iframe("https://app.powerbi.com/view?r=eyJrIjoiZDMyMmE0OTMtNmFjYS00MDllLWI5NDAtZjA5MmIyMTI3YWJhIiwidCI6ImYyODRkYTU4LWMwOTMtNGZiOS1hM2NiLTAyNDNjM2EwMTRhYyJ9", width=1024, height=804)
+        components.iframe("https://app.powerbi.com/view?r=eyJrIjoiNjhmYTVkNDktMDZiZC00NWNkLWI5NWEtZWI3YzVmNmQ2ZjljIiwidCI6ImYyODRkYTU4LWMwOTMtNGZiOS1hM2NiLTAyNDNjM2EwMTRhYyJ9", width=1024, height=804)
 
 
 css = '''
