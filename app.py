@@ -154,6 +154,7 @@ def get_recommendations_globale(id_film):
 ###
 
 st.set_page_config(layout="wide")
+st.logo("https://i.imgur.com/optdGUH.jpeg", size="medium", link=None, icon_image=None)
 
 # Haut de la page
 st.markdown('<a id="top"></a>', unsafe_allow_html=True)  # Marqueur pour retourner en haut de la page
