@@ -154,7 +154,7 @@ def get_recommendations_globale(id_film):
 ### Chargement de la page
 ###
 
-st.set_page_config(layout="wide")
+st.set_page_config(page_title="Application de recommandation de films",layout="wide")
 st.logo("https://baptistedrapeau.wordpress.com/wp-content/uploads/2019/02/logo-cave-c3a0-film-rond-blanc-noir.png", size="large", link=None, icon_image=None)
 
 # Haut de la page
