@@ -157,6 +157,13 @@ def get_recommendations_globale(id_film):
 st.set_page_config(layout="wide")
 st.logo("https://baptistedrapeau.wordpress.com/wp-content/uploads/2019/02/logo-cave-c3a0-film-rond-blanc-noir.png", size="large", link=None, icon_image=None)
 
+#st.set_page_config(page_title='First app', page_icon="📊", initial_sidebar_state="expanded", layout='wide')
+
+
+with st.container():
+#    st.text("This is paragraph :)") 
+    html("""<h1 style="color: #ff0000; font-size: 50px; text-align: center;">Bienvenue sur notre application de recommandation de films !</h1>""")
+
 
 # Haut de la page
 st.markdown('<a id="top"></a>', unsafe_allow_html=True)  # Marqueur pour retourner en haut de la page
