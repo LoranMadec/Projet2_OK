@@ -179,11 +179,13 @@ with tab1:
     # Initialiser la variable `search_input` dans `session_state` si elle n'existe pas
     if 'search_input' not in st.session_state:
         st.session_state.search_input = ''
+        st.rerun()
     # Afficher la barre de recherche
     choixfilm = st.text_input("Recherche : ", value=st.session_state.search_input)
     # Mettre à jour la valeur de `search_input` à chaque modification de la barre de recherche
     if choixfilm != st.session_state.search_input:
         st.session_state.search_input = choixfilm
+        st.rerun()
     if choixfilm:
         suggestions = obtenir_suggestions_film(choixfilm)
         if suggestions:
